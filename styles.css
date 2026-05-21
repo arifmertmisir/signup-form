@@ -6,6 +6,7 @@
 body{
  margin: 0;
  font-family: 'Cinzel', serif;
+ font-size: 16px;
 }
 
 .image_container {
@@ -39,19 +40,18 @@ body{
   background-color: rgba(128, 128, 128, 0.056);
 }
 
+.header span {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .form_container {
   box-sizing: border-box;
   width: 67vw;
   margin-left: 33vw;
-  padding: 20px 0 0 40px; 
+  padding: 10px 0 0 40px; 
   box-shadow: 5px 5px 5px darkgrey;
   overflow: hidden;
-}
-
-.form_container legend {
-  text-align: start;
-  font-weight: bold;
-  padding-bottom: 20px;
 }
 
 .form_container input {
@@ -72,17 +72,39 @@ body{
   width: 75%;
 }
 
-.button_container{
-  box-sizing: border-box;  
+input {
+  border: 1px solid #E5E7EB;
+  font: inherit;
+}
+
+input:focus {
+  border: 1px solid blue; 
+}
+
+input:user-invalid {
+  border: 1px solid red; 
+}
+
+.button_container{ 
+  box-sizing: border-box;
+  width: 67vw;
+  height: 33vh;
   margin-left: 33vw;
   padding: 40px 0 0 40px; 
+  background-color: rgba(128, 128, 128, 0.056);
 }
+
+.button_container a {
+  color: #596D48; 
+  font-weight: bold;
+}
+
 
 .button_container button {
   height: 40px;
   width: 225px;
   border-radius: 10px;
-  font-family: 'Cinzel', serif;
+  font:inherit;
   font-weight: bold;
   background-color: #596D48;
   color: aliceblue;
