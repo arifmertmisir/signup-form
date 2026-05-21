@@ -3,8 +3,13 @@
   src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
 }
 
-body{
+* {
  margin: 0;
+ padding: 0; 
+ box-sizing: border-box;
+}
+
+body{
  font-family: 'Cinzel', serif;
  font-size: 16px;
 }
@@ -92,7 +97,7 @@ input:user-invalid {
 .button_container{ 
   box-sizing: border-box;
   width: 67vw;
-  height: 33vh;
+  height: 40px;
   margin-left: 33vw;
   padding: 40px 0 0 40px; 
   background-color: rgba(128, 128, 128, 0.056);
@@ -102,7 +107,6 @@ input:user-invalid {
   color: #596D48; 
   font-weight: bold;
 }
-
 
 .button_container button {
   height: 40px;
