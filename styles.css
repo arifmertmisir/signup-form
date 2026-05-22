@@ -3,6 +3,11 @@
   src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Norsebold';
+  src: url('/fonts/Norsebold.otf') format('opentype');
+}
+
 * {
  margin: 0;
  padding: 0; 
@@ -32,6 +37,33 @@ body{
   left: 50%;
   transform: translateX(-50%);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.logo_container {
+  position: absolute;
+  width: 33vw;
+  height: 16vh;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0 10px 10px;
+}
+
+.logo_container img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo_container p {
+  color: white;
+  font-family: 'Norsebold', serif;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .header {
@@ -97,7 +129,7 @@ input:user-invalid {
 .button_container{ 
   box-sizing: border-box;
   width: 67vw;
-  height: 40px;
+  height: 40vh;
   margin-left: 33vw;
   padding: 40px 0 0 40px; 
   background-color: rgba(128, 128, 128, 0.056);
